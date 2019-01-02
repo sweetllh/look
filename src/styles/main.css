@@ -1,0 +1,316 @@
+@charset "utf-8";
+body{
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+input,textarea,select,option{
+	-webkit-appearance         : none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+#app{
+  height: 100vh;
+  width : 100vw;
+}
+
+
+/*路由跳转动画*/
+.move-enter-active,
+.move-leave-active {
+  transition: opacity .5s;
+}
+.move-enter,
+.move-leave {
+  opacity: 0;
+}
+
+a	{
+	color: #2692EF;
+}
+.mainColor{
+		color: #2692EF;
+}
+/*td div,td span,*/
+td a{
+	/*white-space: nowrap;*/
+	/*text-overflow: ellipsis;
+	overflow: hidden;*/
+}
+a{
+	text-decoration: none;
+}
+td img{
+		vertical-align: middle;
+}
+
+#Home{
+  height  : 100%;
+  overflow: hidden;
+  width   : 100%;
+}
+.wrapper{
+  height  : 100%;
+  width   : 100%;
+  overflow: hidden;
+}
+
+/*main内容*/
+.main{
+  background        : #EFEFEF;
+  position          : absolute;
+  top               : 60px;
+  left              : 225px;
+  right             : 0;
+  bottom            : 0;
+  overflow-y        : auto;
+  -webkit-transition: left .3s ease-in-out;
+  -o-transition     : left .3s ease-in-out;
+  transition        : left .3s ease-in-out;
+}
+.container{
+  /*padding: 10px 20px 0 20px;*/
+  padding: 10px 10px 5px;
+}
+.pagination{
+  margin-top: 10px;
+}
+/*标题*/
+.container h2{
+  margin: 10px 0;
+}
+/*设置边框角度和阴影*/
+.container>div{
+  background        : #fff;
+  border-radius     : 10px;
+  box-shadow        : 0 1px 3px rgba(26,26,26,.1);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing   : border-box;
+  box-sizing        : border-box;
+  /*padding:0 20px 10px;*/
+  padding: 10px 20px;
+}
+
+/*****HEADER 头部*****/
+header{
+  display    : flex;
+  position   : relative;
+  width      : 100%;
+  height     : 60px;
+  box-shadow : 0px 5px 5px 0px rgba(6,0,1,0.07);
+  line-height: 60px;
+  font-size  : 22px;
+  /*color: #fff;*/
+ /* background-color: #2692EF;*/
+  -webkit-transition: all .3s ;
+  -moz-transition   : all .3s ;
+  transition        : all .3s ;
+
+}
+.collapse-btn{
+  float  : left;
+  height : 100%;
+  padding: 0 20px;
+  cursor : pointer;
+}
+.top-nav{
+  display         : flex;
+  -webkit-box-flex: 1;
+  flex            : 1;
+  justify-content : flex-end;
+}
+.top-nav>div{
+  cursor      : pointer;
+  margin-right: 40px;
+}
+/*消息*/
+.news{
+  position: relative;
+}
+.msg{
+  background-color: #d76662;
+  border-radius   : 50%;
+  position        : absolute;
+  top             : 50%;
+  right           : 0;
+  height          : 8px;
+  width           : 8px;
+  margin-top      : -10px;
+  margin-right    : -5px;
+}
+/*退出or设置*/
+.head .el-dropdown{
+  /*color: #fff;*/
+  font-size: 20px;
+}
+
+
+/*****SIDEBAR左侧边栏*****/
+#sidebar-left{
+  display: inline-block;
+  height : 100%;
+}
+#sidebar-left>ul{
+  height: 100%;
+}
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+  width     : 225px;
+  min-height: 400px;
+}
+
+.content-collapse{
+  left: 64px;
+}
+.el-submenu__title i,.el-menu-item i{
+  color: #fff;
+}
+.el-menu{
+	background-color: #333;
+}
+.el-menu-item,.el-submenu__title{
+	color: #fff;
+}
+.el-submenu .el-menu-item{
+	text-indent: 2em;
+}
+
+.el-menu-item     : hover, .el-menu-item     : focus,
+.el-submenu__title: hover, .el-submenu__title: focus{
+	background-color: #424242;
+	/*color: inherit;*/
+}
+/*.el-menu-item:hover .el-menu-item i, 
+.el-menu-item     : focus .el-menu-item i,
+.el-submenu__title: hover i,
+.el-submenu__title: focus i{
+	color: inherit ;
+}*/
+/*.el-submenu .el-menu{
+	background-color: #424242;
+}*/
+
+
+/*重置element*/
+.el-submenu__title,.el-menu-item{
+	font-size: 16px;
+}
+.el-menu--inline .el-menu-item{
+	font-size: 14px;
+}
+
+/*弹窗*/
+.el-dialog__body{
+	padding-bottom: 0;
+}
+
+/*图片墙*/
+.upload-demo .el-upload--picture-card,
+.el-upload-list--picture-card .el-upload-list__item{
+	width      : 70px;
+	height     : 70px;
+	line-height: 80px;
+}
+
+/*表格*/
+.el-table thead{
+	color: #707172;
+}
+.el-table th{
+	background: #E2E2E2;
+}
+
+.table{
+	margin-top: 10px;
+}
+
+/*选项卡*/
+.el-tabs__item.is-top{
+	font-size: 15px;
+}
+
+/*分页.表格*/
+.pageWrap{
+	margin-top     : 10px;
+	display        : flex;
+	justify-content: flex-end;
+}
+
+.el-tag{
+	background-color: inherit;
+	border          : none;
+	font-size       : 14px;
+	cursor          : pointer;
+	height          : auto;
+}
+.Address .el-tag{
+	color: inherit;
+}
+td img ,.el-tag img{
+	width         : 40px;
+	vertical-align: middle;
+	border-radius : 5px;
+}
+.tdImgWrap .cell,.tdImgWrap2 .cell{
+	display: flex;
+	/*justify-content: space-between;*/
+	align-items: center;
+}
+.tdImgWrap .cell span{
+	color : #2692EF;
+	cursor: pointer;
+}
+.tdImgWrap2 .cell span{
+	padding-left: 5px;
+	cursor      : pointer;
+}
+.el-popover{
+	text-align: center;
+	max-width : 150px;
+}
+.el-popover p{
+	color : #2692EF;
+	cursor: pointer;
+}
+.el-popover > img{
+	width        : 150px;
+	border-radius: 10px;
+}
+.el-dialog--center .el-dialog__body{
+	padding-top   : 10px;
+	padding-bottom: 20px;
+}
+
+/*上传头像*/
+.avatar-uploader .el-upload {
+    border       : 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor       : pointer;
+    position     : relative;
+    overflow     : hidden;
+ }
+.avatar-uploader .el-upload:hover {
+    border-color: #409EFF;
+  }
+.avatar-uploader-icon {
+    font-size  : 28px;
+    color      : #8c939d;
+    width      : 90px;
+    height     : 80px;
+    line-height: 80px;
+    text-align : center;
+}
+.avatar {
+    width  : 80px;
+    height : 80px;
+    display: block;
+  }
+  
+  /*抢购条件多选框*/
+ .condition .el-checkbox{
+ 		display      : block;
+ 		width        : 100%;
+ 		background   : #F2F2F2;
+ 		padding      : 10px;
+ 		box-sizing   : border-box;
+ 		margin-bottom: 10px;
+ }
+  .condition .el-checkbox + .el-checkbox{
+  	margin-left: 0;
+  }
